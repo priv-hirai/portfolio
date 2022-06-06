@@ -2,43 +2,24 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 
   <title>priv-free-market</title>
 
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
-  <!-- <script type="text/javascript" src="sample.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <header class="ly_header">
-        <div class="ly_header_inner">
-            <div class="bl_header_box">
-                <div class="start-section">
-                    <img class="bl_header_icon" src="assets/image/header-icon.svg" alt="header icon">
-                </div>
-                <div class="center-section">
-                    <input class="bl_header_search" type="search" placeholder="なにをお探しですか？" aria-label="検索キーワードを入力">
-                </div>
-                <div class="end-section">
-                    <ul>
-                        <li><a href="#">お知らせ</a></li>
-                        <li><a href="#">やることリスト</a></li>
-                        <li><a href="#">アカウント</a></li>
-                        <li><a class="bl_header_listing" href="#">出品</a></li>
-                    </ul>
-                </div>
-            </div>
-            <nav>
-                <ul class="navigation_ul">
-                    <li class="navigation_li">おすすめ</li>
-                    <li class="navigation_li">マイリスト</li>
-                    <li class="navigation_li">ピックアップ</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- template.js -->
+    <script src="assets/js/template.js"></script>
+
+    <header id="header" class="ly_header"></header>
+
     <main class="ly_main_inner">
         <section class="bl_product_title_box">
             <div>
@@ -77,6 +58,6 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer" class="ly_footer"></footer>
 </body>
 </html>
