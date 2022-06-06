@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+:root {
+    --grid-layout-gutter: 24px;
+    --grid-layout-inset: 16px;
+    --grid-layout-page-padding-top: 40px;
+    --grid-layout-page-padding-bottom: 64px;
+    --grid-layout-page-padding-horizontal: 36px;
+
+    --header-z-index: 1000;
+}
+
+*,
+:after,
+:before {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+html {
+    color: #333333;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+h2 {
+    color: #666666;
+}
+
+.flex_item_center {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.ly_main_inner {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    outline: none;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: var(--grid-layout-page-padding-top) var(--grid-layout-page-padding-horizontal)
+        var(--grid-layout-page-padding-bottom);
+}
+
+.bl_product_title_box {
+    margin-bottom: 16px;
+}
+
+.bl_product_title_txt {
+    font-size: 20px;
+}
+
+@media (min-width: 960px) {
+    .bl_product_item_ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: var(--grid-layout-gutter);
+    }
+}
+
+@media (min-width: 568px) and (max-width: 959.9px) {
+    .bl_product_item_ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: var(--grid-layout-gutter);
+    }
+}
+
+@media (max-width: 567.9px) {
+    .bl_product_item_ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.item-thumbnail {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.item-name {
+    display: -webkit-box;
+    height: calc(39.2px);
+    margin-top: 8px;
+    overflow: hidden;
+    color: var(--alias-color-text-primary-default);
+    font-size: 14px;
+    line-height: 1.4em;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
