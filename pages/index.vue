@@ -1,6 +1,5 @@
 <template>
-  <!-- <Tutorial/> -->
-  <!-- <sidebar/> -->
+  <profile/>
 </template>
 
 <script>
