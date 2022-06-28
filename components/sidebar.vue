@@ -1,6 +1,10 @@
 <template>
   <div class="sidebar">
     <div>sidebar.vue 読み込み確認</div>
+    <h2>確認</h2>
+    <ul>
+      <li>a</li>
+    </ul>
   </div>
 </template>
 <script>
