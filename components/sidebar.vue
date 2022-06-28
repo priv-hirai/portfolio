@@ -1,8 +1,10 @@
 <template>
-  <div class="sidebar">
-    <div>sidebar.vue 読み込み確認</div>
-    <h2>確認</h2>
+  <div class="sidebar h100">
+    <h2>ポートフォリオ</h2>
     <ul>
+      <li>a</li>
+      <li>a</li>
+      <li>a</li>
       <li>a</li>
     </ul>
   </div>
@@ -14,7 +16,7 @@ export default {
 </script>
 <style scoped>
 .sidebar {
-    font-size: 16px;
-    font-weight: bold;
+  border-right: solid 1px #caddde;
+  background-color: #caddde;
 }
 </style>
