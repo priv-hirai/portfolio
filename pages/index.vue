@@ -1,9 +1,11 @@
 <template>
-  <Tutorial/>
+  <!-- <Tutorial/> -->
+  <!-- <sidebar/> -->
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  layout: 'default.vue'
 }
 </script>
