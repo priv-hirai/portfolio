@@ -1,17 +1,17 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div class="profile h100">
-    profile
+  <div class="top h100">
+    top.vue
   </div>
 </template>
 
 <script>
 export default {
-  name: 'profile'
+  name: 'top'
 }
 </script>
 <style scoped>
-.profile {
+.top {
   background-color: #d4dce0;
 }
 </style>
