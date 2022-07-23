@@ -1,0 +1,5 @@
+@use "system" as *;
+
+.ly_inner {
+  @include contentCentering();
+}
