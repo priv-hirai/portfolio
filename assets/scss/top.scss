@@ -1,0 +1,26 @@
+@use "system" as *;
+
+.bl_profile {
+  background-color: $themeColor;
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+
+.bl_profile_itemBox {
+  margin: 0 auto;
+  max-width: 648px;
+}
+
+.bl_profile_name {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.bl_profile_image {
+  text-align: center;
+  margin-bottom: 4rem;
+  img {
+    max-width: 300px;
+    border-radius: 50%;
+  }
+}

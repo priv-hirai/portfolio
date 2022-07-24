@@ -10,7 +10,8 @@ html {
 body{
   height: 100%;
   color: $textDefaultColor;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-family: 'Kaisei Opti', serif;
+  font-size: 18px;
 }
 *,
 :after,
@@ -62,6 +63,10 @@ abbr[title] {
 a {
   background-color: transparent;
   color: $textDefaultColor;
+  font-family: 'Parisienne', cursive;
+  &:hover {
+    color: $textDefaultColor;
+  }
 }
 
 a:active,
@@ -274,4 +279,8 @@ ol {
 
 .container-fluid {
   height: 100%;
+}
+
+p {
+  line-height: 1.8;
 }

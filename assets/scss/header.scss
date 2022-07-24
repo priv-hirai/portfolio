@@ -15,7 +15,7 @@
   left: 0;
   height: 72px;
 
-  .day {
+  .date {
     height: 72px;
     display: flex;
     align-items: center;
@@ -23,8 +23,8 @@
     right: 84px;
     padding-left: 12px;
     position: static;
-    .output_month-date {
-      font-size: 4rem;
+    .month_day {
+      font-size: 48px;
       margin-left: 6px;
     }
   }
@@ -43,7 +43,6 @@
   font-size: 18px;
   justify-content: center;
   a {
-    font-family: "Barlow";
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 12px;

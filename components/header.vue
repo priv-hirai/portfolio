@@ -15,9 +15,9 @@
             </div>
           </div>
         </nav>
-        <p class="day">
-          <span class="output_year">2022.</span>
-          <span class="output_month-date">07.24</span>
+        <p class="date">
+          <span class="year">{{year}}</span>
+          <span class="month_day">{{date}}</span>
         </p>
       </div>
     </div>
@@ -25,7 +25,42 @@
 </template>
 <script>
 export default {
-  name: 'header'
+  name: 'header',
+  data() {
+    return {
+      year : null,
+      date : null,
+    }
+  },
+  created: function() {
+    // ヘッダーに今日の日付をセットする
+    this.getToday();
+  },
+  methods: {
+    getToday: function() {
+      console.log('getToday');
+      let newDate = new Date();
+      // 今年の年数取得
+      let newDateYear = newDate.getFullYear();
+      // 今日の月数取得
+      let newDateMonth = this.convertZeroPadding(newDate.getMonth()+1);
+      // 今日の日付取得
+      let newDateDay = this.convertZeroPadding(newDate.getDate());
+      // 年セット
+      this.year = newDateYear + ".";
+      // 今日の日付セット
+      this.date = String(newDateMonth) + "." + String(newDateDay);
+    },
+    convertZeroPadding: function(date){
+      console.log("convertZeroPadding");
+      // 1桁の数値なら0埋めする
+      if (date.toString().length == 1){
+        date = "0" + String(date);
+      }
+
+      return date;
+    }
+  }
 }
 </script>
 <style scoped>
