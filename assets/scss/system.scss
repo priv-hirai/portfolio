@@ -8,13 +8,9 @@ $contWidth: $contWidthValue + px;
 
 // Color
 // -------------------------------------------------------------------
-$themeColor: #00387C;
-$accentColor: #AEEAF8;
-$accentColor2: #45B0D0;
-$accentColor3: #2f8b87;
-$accentColor4: #00597C;
-$accentColor5: #E2F9FF;
+$themeColor: #f0f2f0;
 $baseColor: #FFFFFF;
+$textDefaultColor: #090905;
 
 // responsive system
 // ---------------------
@@ -27,7 +23,7 @@ $breakpoints: (
 	"sm": "(max-width: 575px)",
 	"md": "(max-width: 767px)",
 	"lg": "(max-width: 1100px)",
-	"xl": "(max-width: 1199px)",
+	"xl": "(max-width: 1200px)",
 	"xll": "(max-width: 1399px)",
 
   "cont": "(min-width: 768px)"
